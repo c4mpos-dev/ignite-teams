@@ -3,6 +3,7 @@ import { Highlight } from "@components/Highlight";
 import { Container, Form } from "./styles";
 import { Input } from "@components/Input";
 import { ButtonIcon } from "@components/ButtonIcon";
+import { Filter } from "@components/Filter";
 
 export function Players(){
     return(
@@ -19,6 +20,9 @@ export function Players(){
                 />
                 <ButtonIcon icon="add"/>
             </Form>
+            <Filter
+                title="Time A"
+            />
         </Container>
     );
 }
