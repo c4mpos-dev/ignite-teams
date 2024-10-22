@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Alert } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Container, Content, Icon } from "./styles";
 import { groupCreate } from "@storage/group/groupCreate";
@@ -6,9 +7,7 @@ import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
 import { Button } from "@components/Button";
 import { Input } from "@components/Input";
-import { err } from "react-native-svg";
-
-
+import { AppError } from "@utils/AppError";
 
 export function NewGroup(){
     const [group, setGroup] = useState('');
@@ -17,11 +16,20 @@ export function NewGroup(){
 
     async function handleNew(){
         try {
+            if (group.length === 0) {
+                return Alert.alert("Nova Turma", "Informe o nome da Turma.");
+            }
+
             await groupCreate(group);
             navigation.navigate("players", { group });
         }
         catch(error) {
-            console.log(error);
+            if (error instanceof AppError){
+                Alert.alert("Nova Turma", error.message);
+            }
+            else {
+                Alert.alert("Nova Turma", "Não foi possível criar uma nova turma.")
+            }
         }
     };
 
