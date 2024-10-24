@@ -8,6 +8,7 @@ Ignite Teams é um aplicativo móvel desenvolvido em React Native com Expo Go, p
 - Remover turmas da lista.
 - Adicionar novas pessoas à turma-time.
 - Remover pessoas da turma-time.
+- Armazenamento local funcional.
 
 ## 💻Tecnologias Utilizadas
 
