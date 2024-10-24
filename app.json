@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "ignite-teams",
+    "name": "Ignite Teams",
     "slug": "ignite-teams",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/logo@2x.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -16,7 +16,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/logo@2x.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.cauacampos.igniteteams"
