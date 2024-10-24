@@ -65,9 +65,9 @@ npx expo start
 <table>
    <tr>
       <center>
-         <td><img src="assets/Groups.png" alt="Groups" width="300" height="700"/></td>
-         <td><img src="assets/New-group.png" alt="New Group" width="300" height="700"/></td>
-         <td><img src="assets/Group-detail.png" alt="Group Detail" width="300" height="700"/></td>
+         <td><img src="assets/Groups.png" alt="Groups" width="300" height="650"/></td>
+         <td><img src="assets/New-group.png" alt="New Group" width="300" height="650"/></td>
+         <td><img src="assets/Group-detail.png" alt="Group Detail" width="300" height="650"/></td>
       </center>
    </tr>
 </table>
