@@ -29,7 +29,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 1. **Clone este repositório**
 
 ```bash
-git clone https://github.com/c4mpos-dev/todo-list.git
+git clone https://github.com/c4mpos-dev/ignite-teams.git
 ```
 
 2. **Navegue até o diretório do projeto**
